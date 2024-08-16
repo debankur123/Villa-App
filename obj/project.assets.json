@@ -1250,13 +1250,24 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "VillaApp.Domains/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/VillaApp.Domains.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VillaApp.Domains.dll": {}
+        }
+      },
       "VillaApp.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Aspire.Npgsql": "8.1.0",
           "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": "8.1.0",
-          "Microsoft.EntityFrameworkCore": "8.0.8"
+          "Microsoft.EntityFrameworkCore": "8.0.8",
+          "VillaApp.Domains": "1.0.0"
         },
         "compile": {
           "bin/placeholder/VillaApp.Infrastructure.dll": {}
@@ -3132,6 +3143,11 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "VillaApp.Domains/1.0.0": {
+      "type": "project",
+      "path": "VillaApp.Domains/VillaApp.Domains.csproj",
+      "msbuildProject": "VillaApp.Domains/VillaApp.Domains.csproj"
     },
     "VillaApp.Infrastructure/1.0.0": {
       "type": "project",

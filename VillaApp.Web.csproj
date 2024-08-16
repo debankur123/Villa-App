@@ -17,6 +17,47 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="VillaApp.Infrastructure\**" />
+    <Compile Remove="VillaApp.Application\**" />
+    <Compile Remove="VillaApp.Domains\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="VillaApp.Infrastructure\**" />
+    <EmbeddedResource Remove="VillaApp.Application\**" />
+    <EmbeddedResource Remove="VillaApp.Domains\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="VillaApp.Infrastructure\**" />
+    <Content Remove="VillaApp.Application\**" />
+    <Content Remove="VillaApp.Domains\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="VillaApp.Infrastructure\**" />
+    <None Remove="VillaApp.Application\**" />
+    <None Remove="VillaApp.Domains\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\bin\Debug\net8.0\VillaApp.Infrastructure.deps.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\bin\Debug\net8.0\VillaApp.Infrastructure.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\obj\Debug\net8.0\VillaApp.Infrastructure.sourcelink.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\obj\VillaApp.Infrastructure.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Application\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Application\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Application\obj\VillaApp.Application.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Domains\bin\Debug\net8.0\VillaApp.Domains.deps.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\Debug\net8.0\VillaApp.Domains.sourcelink.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\VillaApp.Domains.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="VillaApp.Infrastructure\VillaApp.Infrastructure.csproj" />
   </ItemGroup>
 

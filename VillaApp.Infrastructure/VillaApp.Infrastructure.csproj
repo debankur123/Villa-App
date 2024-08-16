@@ -20,4 +20,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VillaApp.Domains\VillaApp.Domains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\ApplicationDbContextFactory.cs" />
+  </ItemGroup>
+
 </Project>

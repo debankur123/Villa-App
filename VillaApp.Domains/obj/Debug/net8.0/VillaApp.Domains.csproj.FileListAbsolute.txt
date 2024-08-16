@@ -1,0 +1,12 @@
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/bin/Debug/net8.0/VillaApp.Domains.deps.json
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/bin/Debug/net8.0/VillaApp.Domains.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/bin/Debug/net8.0/VillaApp.Domains.pdb
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.GeneratedMSBuildEditorConfig.editorconfig
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.AssemblyInfoInputs.cache
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.AssemblyInfo.cs
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.csproj.CoreCompileInputs.cache
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.sourcelink.json
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/refint/VillaApp.Domains.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/VillaApp.Domains.pdb
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/obj/Debug/net8.0/ref/VillaApp.Domains.dll

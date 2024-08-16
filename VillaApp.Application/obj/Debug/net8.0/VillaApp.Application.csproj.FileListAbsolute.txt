@@ -1,0 +1,12 @@
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/bin/Debug/net8.0/VillaApp.Application.deps.json
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/bin/Debug/net8.0/VillaApp.Application.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/bin/Debug/net8.0/VillaApp.Application.pdb
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.AssemblyInfoInputs.cache
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.AssemblyInfo.cs
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.csproj.CoreCompileInputs.cache
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.sourcelink.json
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/refint/VillaApp.Application.dll
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/VillaApp.Application.pdb
+/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/Debug/net8.0/ref/VillaApp.Application.dll
