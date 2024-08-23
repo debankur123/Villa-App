@@ -30,8 +30,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/debankur/MyWorkSpace/VillaApp/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Ob3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/debankur/MyWorkSpace/VillaApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/AddVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvQWRkVmlsbGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/DeleteVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvRGVsZXRlVmlsbGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/EditVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvRWRpdFZpbGxhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/debankur/MyWorkSpace/VillaApp/Views/_ViewImports.cshtml]
