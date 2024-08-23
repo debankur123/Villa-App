@@ -14,30 +14,38 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="VillaApp.Infrastructure\**" />
     <Compile Remove="VillaApp.Application\**" />
     <Compile Remove="VillaApp.Domains\**" />
+    <Compile Remove="Pages\**" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="VillaApp.Infrastructure\**" />
     <EmbeddedResource Remove="VillaApp.Application\**" />
     <EmbeddedResource Remove="VillaApp.Domains\**" />
+    <EmbeddedResource Remove="Pages\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="VillaApp.Infrastructure\**" />
     <Content Remove="VillaApp.Application\**" />
     <Content Remove="VillaApp.Domains\**" />
+    <Content Remove="Pages\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="VillaApp.Infrastructure\**" />
     <None Remove="VillaApp.Application\**" />
     <None Remove="VillaApp.Domains\**" />
+    <None Remove="Pages\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,6 +63,7 @@
     <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\project.assets.json" />
     <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\project.packagespec.json" />
     <_ContentIncludedByDefault Remove="VillaApp.Domains\obj\VillaApp.Domains.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="Pages\Villa\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

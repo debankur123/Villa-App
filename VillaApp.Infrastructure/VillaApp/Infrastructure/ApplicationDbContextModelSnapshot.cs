@@ -34,22 +34,29 @@ namespace VillaApp.Infrastructure.VillaApp.Infrastructure
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<int?>("Occupancy")
                         .HasColumnType("integer");
 
                     b.Property<double?>("Price")
+                        .IsRequired()
                         .HasColumnType("double precision");
 
                     b.Property<int?>("Sqft")
+                        .IsRequired()
                         .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedDate")
@@ -65,6 +72,7 @@ namespace VillaApp.Infrastructure.VillaApp.Infrastructure
                             Id = 1,
                             Description = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://placehold.co/600x400",
+                            IsActive = true,
                             Name = "Royal Villa",
                             Occupancy = 4,
                             Price = 200.0,
@@ -75,6 +83,7 @@ namespace VillaApp.Infrastructure.VillaApp.Infrastructure
                             Id = 2,
                             Description = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://placehold.co/600x401",
+                            IsActive = true,
                             Name = "Premium Pool Villa",
                             Occupancy = 4,
                             Price = 300.0,
@@ -85,6 +94,7 @@ namespace VillaApp.Infrastructure.VillaApp.Infrastructure
                             Id = 3,
                             Description = "Fusce 11 tincidunt maximus leo, sed scelerisque massa auctor sit amet. Donec ex mauris, hendrerit quis nibh ac, efficitur fringilla enim.",
                             ImageUrl = "https://placehold.co/600x402",
+                            IsActive = true,
                             Name = "Luxury Pool Villa",
                             Occupancy = 4,
                             Price = 400.0,

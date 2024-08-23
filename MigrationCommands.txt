@@ -1,0 +1,8 @@
+dotnet ef migrations add --project VillaApp.Infrastructure/VillaApp.Infrastructure.csproj --startup-project VillaApp.Web.csproj --context VillaApp.Infrastructure.Data.ApplicationDbContext --configuration Debug SetIsActiveDefaultValue --output-dir VillaApp.Infrastructure
+
+
+
+
+// Update Database command
+
+dotnet ef database update --project VillaApp.Infrastructure/VillaApp.Infrastructure.csproj --startup-project VillaApp.Web.csproj --context VillaApp.Infrastructure.Data.ApplicationDbContext --configuration Debug 20240822163311_SetIsActiveDefaultValue

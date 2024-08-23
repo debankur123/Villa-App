@@ -5,6 +5,42 @@
       "PackagePath": "staticwebassets/VillaApp.Web.bundle.scp.css"
     },
     {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/accessDenied.jpg",
+      "PackagePath": "staticwebassets/Assets/accessDenied.jpg"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/edit-button.png",
+      "PackagePath": "staticwebassets/Assets/edit-button.png"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/notfound.jpg",
+      "PackagePath": "staticwebassets/Assets/notfound.jpg"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/orderConfirmed.jpg",
+      "PackagePath": "staticwebassets/Assets/orderConfirmed.jpg"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/placeholder.png",
+      "PackagePath": "staticwebassets/Assets/placeholder.png"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/resort.png",
+      "PackagePath": "staticwebassets/Assets/resort.png"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/slide1.jpg",
+      "PackagePath": "staticwebassets/Assets/slide1.jpg"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/slide2.jpg",
+      "PackagePath": "staticwebassets/Assets/slide2.jpg"
+    },
+    {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/trash.png",
+      "PackagePath": "staticwebassets/Assets/trash.png"
+    },
+    {
       "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

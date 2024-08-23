@@ -1,0 +1,102 @@
+﻿@model Villa
+
+<div class="w-100 card border-0 p-4">
+    <div class="card-header bg-success bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Create Villa(s)</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body border p-4">
+        <form class="row" method="post">
+            <div class="p-3">
+                @* <div asp-validation-summary="ModelOnly" class="text-warning"></div> *@
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="Name" class="form-control border-shadow" />
+                    <label asp-for="Name" class="ms-2"></label>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="Description" class="form-control border-shadow" />
+                    <label asp-for="Description" class="ms-2"></label>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="Price" class="form-control border-shadow" />
+                    <label asp-for="Price" class="ms-2"></label>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="Sqft" class="form-control border-shadow" />
+                    <label asp-for="Sqft" class="ms-2"></label>
+                    <span asp-validation-for="Sqft" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="Occupancy" class="form-control border-shadow" />
+                    <label asp-for="Occupancy" class="ms-2"></label>
+                </div>
+                <div class="form-floating py-1 col-12">
+                    <input asp-for="ImageUrl" class="form-control border-shadow" />
+                    <label asp-for="ImageUrl" class="ms-2"></label>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-colour-1 btn-sm w-100"><span><i
+                                    class="material-icons align-middle me-1">save</i></span>EDIT</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-action="Index" asp-controller="Villa" class="btn btn btn-outline btn-sm w-100">
+                            <span><i class="material-icons align-middle">cancel</i></span>
+                            CANCEL
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    .btn-outline {
+        color: #4fbfa8;
+        background-color: #ffffff;
+        border-color: #4fbfa8;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .btn-outline:hover,
+    .btn-outline:active,
+    .btn-outline:focus,
+    .btn-outline.active {
+        background: #4fbfa8;
+        color: #ffffff;
+        border-color: #4fbfa8;
+    }
+
+    .btn-colour-1 {
+        color: #fff;
+        background-color: #004E64;
+        border-color: #004E64;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        border-radius: 0;
+    }
+
+    .btn-colour-1:hover,
+    .btn-colour-1:active,
+    .btn-colour-1:focus,
+    .btn-colour-1.active {
+        background: #003D4F;
+        color: #ffffff;
+        border-color: #003D4F;
+    }
+</style>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
