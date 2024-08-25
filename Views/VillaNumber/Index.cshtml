@@ -1,0 +1,74 @@
+@model List<VillaNumber>
+
+<div class="w-100 card border-0 p-4">
+    <div class="card-header bg-success bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Villa Number List(s)</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body border p-4">
+        <div class="row pb-3">
+            <div class="col-6 offset-6 text-end">
+                <a asp-action="AddVillaNumber" asp-controller="VillaNumber" class="btn btn-colour-1 btn-sm">
+                    <span><i class="material-icons align-middle">add</i></span>
+                    CREATE VILLA NUMBER
+                </a>
+            </div>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Villa Name</th>
+                    <th>Villa Number</th>
+                    <th>Special Details</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td>@obj.VillaId</td>
+                        <td>@obj.Villa_Number</td>
+                        <td>@obj.SpecialDetails</td>
+                        <td class="text-center">
+                            <a asp-action="EditVilla" asp-controller="VillaNumber" asp-route-villaNumberId="@obj.Villa_Number" class="btn btn-sm">
+                                <img src="~/Assets/edit-button.png" alt="Edit" class="img-icon-edit" />
+                            </a>
+                            @* <a href="#" data-bs-toggle="modal" data-bs-target="@("#DeleteProduct-" + obj.Villa_Number)" *@
+                            @*     data-bs-url="@Url.Action($"DeleteTag/{obj.Villa_Number}")" class="btn btn-sm"> *@
+                            @*     <img src="~/Assets/trash.png" alt="Delete" class="img-icon-delete" /> *@
+                            @* </a> *@
+                            @* @await Html.PartialAsync("DeleteVilla", obj) *@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .btn-colour-1 {
+        color: #fff;
+        background-color: #004E64;
+        border-color: #004E64;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        border-radius: 0;
+    }
+
+    .img-icon-edit {
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+    }
+
+    .img-icon-delete {
+        width: 25px;
+        height: 25px;
+        vertical-align: middle;
+    }
+</style>

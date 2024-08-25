@@ -25,6 +25,8 @@
     <Compile Remove="VillaApp.Application\**" />
     <Compile Remove="VillaApp.Domains\**" />
     <Compile Remove="Pages\**" />
+    <Compile Remove="Views\VillaNumber\Index.cshtml.cs" />
+    <Compile Remove="Views\VillaNum\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +34,7 @@
     <EmbeddedResource Remove="VillaApp.Application\**" />
     <EmbeddedResource Remove="VillaApp.Domains\**" />
     <EmbeddedResource Remove="Pages\**" />
+    <EmbeddedResource Remove="Views\VillaNum\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +42,7 @@
     <Content Remove="VillaApp.Application\**" />
     <Content Remove="VillaApp.Domains\**" />
     <Content Remove="Pages\**" />
+    <Content Remove="Views\VillaNum\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +50,7 @@
     <None Remove="VillaApp.Application\**" />
     <None Remove="VillaApp.Domains\**" />
     <None Remove="Pages\**" />
+    <None Remove="Views\VillaNum\**" />
   </ItemGroup>
 
   <ItemGroup>
