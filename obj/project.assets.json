@@ -1270,7 +1270,10 @@
         },
         "runtime": {
           "bin/placeholder/VillaApp.Domains.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "VillaApp.Infrastructure/1.0.0": {
         "type": "project",

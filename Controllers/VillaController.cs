@@ -31,7 +31,7 @@ public class VillaController : Controller
         if (!ModelState.IsValid) return View();
         _context.Tbl_Villa.Add(obj);
         _context.SaveChanges();
-        TempData["success"] = "Villa added succesfully!";
+        TempData["success"] = "Villa added successfully!";
         return RedirectToAction("Index", "Villa");
     }
 

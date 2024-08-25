@@ -11,7 +11,7 @@
             "debug": false,
             "newestOnTop": false,
             "progressBar": true,
-            "positionClass": "toast-bottom-right",
+            "positionClass": "toast-top-center",
             "preventDuplicates": true,
             "onclick": null,
             "showDuration": "300",
@@ -26,24 +26,21 @@
         @if (TempData["success"] != null)
         {
             <text>
-                        toastr.success('@TempData["success"]');
+                toastr.success('@TempData["success"]');
             </text>
-            ;
         }
         @if (TempData["error"] != null)
         {
             <text>
-                        toastr.error('@TempData["error"]');
+                toastr.error('@TempData["error"]');
             </text>
-            ;
         }
         @if (TempData["warning"] != null)
         {
             <text>
-                        toastr.warning('@TempData["warning"]');
+                toastr.warning('@TempData["warning"]');
             </text>
-            ;
         }
-                });
+    });
     </script>
 }
