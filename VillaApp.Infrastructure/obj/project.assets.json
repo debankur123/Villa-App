@@ -3186,32 +3186,39 @@
     ]
   },
   "packageFolders": {
-    "/home/debankur/.nuget/packages/": {}
+    "C:\\Users\\012173\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/VillaApp.Infrastructure.csproj",
+      "projectUniqueName": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\VillaApp.Infrastructure.csproj",
       "projectName": "VillaApp.Infrastructure",
-      "projectPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/VillaApp.Infrastructure.csproj",
-      "packagesPath": "/home/debankur/.nuget/packages/",
-      "outputPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/obj/",
+      "projectPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\VillaApp.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/debankur/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/VillaApp.Domains.csproj": {
-              "projectPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Domains/VillaApp.Domains.csproj"
+            "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\VillaApp.Domains.csproj": {
+              "projectPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\VillaApp.Domains.csproj"
             }
           }
         }
@@ -3267,7 +3274,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

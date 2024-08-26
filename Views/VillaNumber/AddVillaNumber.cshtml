@@ -1,49 +1,40 @@
 @model VillaNumberVM
 
-<div class="w-100 card border-0 p-4">
-    <div class="card-header bg-success bg-gradient ml-0 py-3">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="text-white py-2">Create Villa Number</h2>
-            </div>
-        </div>
+<div class="card border-0 shadow-lg p-4">
+    <div class="card-header bg-success bg-gradient text-center text-white py-3">
+        <h2>Create Villa Number</h2>
     </div>
-    <div class="card-body border p-4">
-        <form id="toastNotification" class="row" method="post">
-            <div class="p-3">
-                @* <div asp-validation-summary="ModelOnly" class="text-warning"></div> *@
-                <div class="form-floating py-1 col-12">
-                    @* <select asp-for="@Model.VillaId" asp-items="@ViewData["VillaNames"] as IEnumerable<SelectListItem>" class="form-select border shadow"> *@
-                    @*     <option disabled selected>--Select Villa--</option> *@
-                    @* </select> *@
-                    <select asp-for="@Model.VillaNumber!.VillaId" asp-items="@Model.VillaList" class="form-select border shadow">
-                        <option disabled selected>--Select Villa--</option>
-                    </select>
-                    <label asp-for="VillaNumber!.VillaId" class="ms-2"></label>
-                    <span asp-validation-for="VillaNumber!.VillaId" class="text-danger"></span>
+    <div class="card-body p-4">
+        <form id="toastNotification" method="post" class="needs-validation">
+            <div class="mb-3">
+                <label asp-for="VillaNumber!.VillaId" class="form-label">Select Villa</label>
+                <select asp-for="VillaNumber!.VillaId" asp-items="@Model.VillaList" class="form-select shadow-sm">
+                    <option disabled selected>--Select Villa--</option>
+                </select>
+                <span asp-validation-for="VillaNumber!.VillaId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="VillaNumber!.Villa_Number" class="form-label">Villa Number</label>
+                <input asp-for="VillaNumber!.Villa_Number" class="form-control shadow-sm" />
+                <span asp-validation-for="VillaNumber!.Villa_Number" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="VillaNumber!.SpecialDetails" class="form-label">Special Details</label>
+                <input asp-for="VillaNumber!.SpecialDetails" class="form-control shadow-sm" />
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <button type="submit" class="btn btn-colour-1 w-100">
+                        <ion-icon name="checkmark-circle-outline" class="me-1 ionic-icons align-middle"></ion-icon>SAVE
+                    </button>
                 </div>
-                <div class="form-floating py-1 col-12">
-                    <input asp-for="VillaNumber!.Villa_Number" class="form-control border-shadow" />
-                    <label asp-for="VillaNumber!.Villa_Number" class="ms-2"></label>
-                    <span asp-validation-for="VillaNumber!.Villa_Number" class="text-danger"></span>
-                </div>
-                <div class="form-floating py-1 col-12">
-                    <input asp-for="VillaNumber!.SpecialDetails" class="form-control border-shadow" />
-                    <label asp-for="VillaNumber!.SpecialDetails" class="ms-2"></label>
-                    @* <span asp-validation-for="SpecialDetails" class="text-danger"></span> *@
-                </div>
-                
-                <div class="row pt-2">
-                    <div class="col-6 col-md-3">
-                        <button type="submit" class="btn btn-colour-1 btn-sm w-100"><span><i
-                                    class="material-icons align-middle me-1">save</i></span>SAVE</button>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <a asp-action="Index" asp-controller="VillaNumber" class="btn btn btn-outline btn-sm w-100">
-                            <span><i class="material-icons align-middle">cancel</i></span>
-                            DISCARD
-                        </a>
-                    </div>
+                <div class="col-6 col-md-3">
+                    <a asp-action="Index" asp-controller="VillaNumber" class="btn btn-outline w-100">
+                        <i class="material-icons align-middle">close</i> DISCARD
+                    </a>
                 </div>
             </div>
         </form>
@@ -51,27 +42,30 @@
 </div>
 
 <style>
-    .btn-outline {
-        color: #4fbfa8;
-        background-color: #ffffff;
-        border-color: #4fbfa8;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-    }
 
     .btn-colour-1 {
         color: #fff;
         background-color: #004E64;
-        border-color: #004E64;
+        border: none;
         font-weight: bold;
         letter-spacing: 0.05em;
-        border-radius: 0;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
     }
 
+    .btn-outline {
+        color: #4fbfa8;
+        background-color: #ffffff;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        border-radius: 0.25rem;
+        padding: 0.5rem 1rem;
+    }
 </style>
 
 @section Scripts {
     @{
-            <partial name="_ValidationScriptsPartial" />
+        <partial name="_ValidationScriptsPartial" />
     }
 }

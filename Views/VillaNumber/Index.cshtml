@@ -12,7 +12,7 @@
         <div class="row pb-3">
             <div class="col-6 offset-6 text-end">
                 <a asp-action="AddVillaNumber" asp-controller="VillaNumber" class="btn btn-colour-1 btn-sm">
-                    <span><i class="material-icons align-middle">add</i></span>
+                    <span><i class="material-icons align-middle">add_circle</i></span>
                     CREATE VILLA NUMBER
                 </a>
             </div>
@@ -30,12 +30,12 @@
                 @foreach (var obj in Model)
                 {
                     <tr>
-                        <td>@obj.VillaId</td>
+                        <td>@obj.Villa!.Name</td>
                         <td>@obj.Villa_Number</td>
                         <td>@obj.SpecialDetails</td>
                         <td class="text-center">
                             <a asp-action="EditVilla" asp-controller="VillaNumber" asp-route-villaNumberId="@obj.Villa_Number" class="btn btn-sm">
-                                <img src="~/Assets/edit-button.png" alt="Edit" class="img-icon-edit" />
+                                <ion-icon name="create-outline" class="me-1 align-middle ionic-icons">EDIT</ion-icon>
                             </a>
                             @* <a href="#" data-bs-toggle="modal" data-bs-target="@("#DeleteProduct-" + obj.Villa_Number)" *@
                             @*     data-bs-url="@Url.Action($"DeleteTag/{obj.Villa_Number}")" class="btn btn-sm"> *@

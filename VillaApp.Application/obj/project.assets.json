@@ -8,24 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/debankur/.nuget/packages/": {}
+    "C:\\Users\\012173\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/VillaApp.Application.csproj",
+      "projectUniqueName": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Application\\VillaApp.Application.csproj",
       "projectName": "VillaApp.Application",
-      "projectPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/VillaApp.Application.csproj",
-      "packagesPath": "/home/debankur/.nuget/packages/",
-      "outputPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/obj/",
+      "projectPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Application\\VillaApp.Application.csproj",
+      "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
+      "outputPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/debankur/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
