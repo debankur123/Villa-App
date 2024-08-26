@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t1WJM71tBaT7yU+FBOY/JzzYxwzzS4ZPJjyMkjaOC/Q=",
+  "Hash": "U2Ya6Vssfiz4rdK5fyF5pa71xJBSQUakCB9w8XXBJqQ=",
   "Source": "VillaApp.Web",
   "BasePath": "_content/VillaApp.Web",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "VillaApp.Web/wwwroot",
+      "Name": "VillaApp.Web\\wwwroot",
       "Source": "VillaApp.Web",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/bundle/VillaApp.Web.styles.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VillaApp.Web.styles.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "VillaApp.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/bundle/VillaApp.Web.styles.css"
+      "OriginalItemSpec": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VillaApp.Web.styles.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/projectbundle/VillaApp.Web.bundle.scp.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VillaApp.Web.bundle.scp.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Computed",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "VillaApp.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/scopedcss/projectbundle/VillaApp.Web.bundle.scp.css"
+      "OriginalItemSpec": "D:\\DotNet_Projects\\Villa-App\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VillaApp.Web.bundle.scp.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/accessDenied.jpg",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\accessDenied.jpg",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/accessDenied.jpg",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/accessDenied.jpg"
+      "OriginalItemSpec": "wwwroot\\Assets\\accessDenied.jpg"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/edit-button.png",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\edit-button.png",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/edit-button.png",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/edit-button.png"
+      "OriginalItemSpec": "wwwroot\\Assets\\edit-button.png"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/notfound.jpg",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\notfound.jpg",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/notfound.jpg",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/notfound.jpg"
+      "OriginalItemSpec": "wwwroot\\Assets\\notfound.jpg"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/orderConfirmed.jpg",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\orderConfirmed.jpg",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/orderConfirmed.jpg",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/orderConfirmed.jpg"
+      "OriginalItemSpec": "wwwroot\\Assets\\orderConfirmed.jpg"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/placeholder.png",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\placeholder.png",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/placeholder.png",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/placeholder.png"
+      "OriginalItemSpec": "wwwroot\\Assets\\placeholder.png"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/resort.png",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\resort.png",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/resort.png",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/resort.png"
+      "OriginalItemSpec": "wwwroot\\Assets\\resort.png"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/slide1.jpg",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\slide1.jpg",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/slide1.jpg",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/slide1.jpg"
+      "OriginalItemSpec": "wwwroot\\Assets\\slide1.jpg"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/slide2.jpg",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\slide2.jpg",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/slide2.jpg",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/slide2.jpg"
+      "OriginalItemSpec": "wwwroot\\Assets\\slide2.jpg"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Assets/trash.png",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\Assets\\trash.png",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "Assets/trash.png",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Assets/trash.png"
+      "OriginalItemSpec": "wwwroot\\Assets\\trash.png"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/css/site.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\css\\site.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/favicon.ico",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\favicon.ico",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/js/site.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\js\\site.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/site.js"
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -356,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -375,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -394,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -413,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -432,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -451,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -470,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -489,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -508,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -527,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -546,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -565,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -584,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -603,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -622,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -641,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -660,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -679,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -698,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -717,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -736,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -755,13 +755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -774,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -793,13 +793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -812,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -831,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -850,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -869,13 +869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -888,13 +888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -907,13 +907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -926,13 +926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -945,13 +945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -964,13 +964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -983,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1002,13 +1002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1021,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1040,13 +1040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1059,13 +1059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1078,13 +1078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1097,13 +1097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1116,13 +1116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1135,13 +1135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1154,13 +1154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1211,13 +1211,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1230,13 +1230,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1249,13 +1249,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1268,13 +1268,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1287,13 +1287,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1306,13 +1306,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1325,13 +1325,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1344,13 +1344,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "VillaApp.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "ContentRoot": "D:\\DotNet_Projects\\Villa-App\\wwwroot\\",
       "BasePath": "_content/VillaApp.Web",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1363,7 +1363,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+      "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     }
   ]
 }

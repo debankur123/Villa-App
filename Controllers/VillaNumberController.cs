@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using VillaApp.Domains.Entities;
 using VillaApp.Infrastructure.Data;
 using VillaApp.Web.ViewModels;
@@ -14,10 +15,12 @@ public class VillaNumberController : Controller
     }
     public IActionResult Index()
     {
-        var villaNumber = _context.Tbl_VillaNumber.ToList();
+        var villaNumber = _context.Tbl_VillaNumber
+            .Include(u => u.Villa)
+            .ToList();
         return View(villaNumber);
     }
-
+    [HttpGet]
     public IActionResult AddVillaNumber()
     {
         VillaNumberVM villaNumberVM = new()
@@ -34,36 +37,48 @@ public class VillaNumberController : Controller
         return View(villaNumberVM);
     }
     [HttpPost]
-    public IActionResult AddVillaNumber(VillaNumber obj)
+    public IActionResult AddVillaNumber(VillaNumberVM obj)
     {
-        if (obj.VillaId == 0)
+        bool roomExists = _context.Tbl_VillaNumber.Any(u => u.Villa_Number == obj.VillaNumber!.Villa_Number);
+        obj.VillaList = _context.Tbl_Villa.ToList().Select(u => new SelectListItem
         {
-            ModelState.AddModelError("","");
-            TempData["warning"] = "Please enter valid Villa Id!";
-        }
-        if (obj.Villa_Number == 0)
+            Text = u.Name.ToString(),
+            Value = u.Id.ToString()
+        });
+        switch (ModelState.IsValid , roomExists)
         {
-            ModelState.AddModelError("","");
-            TempData["warning"] = "Please enter valid Villa Number!";
+            case (true,false):
+                _context.Tbl_VillaNumber.Add(obj.VillaNumber!);
+                _context.SaveChanges();
+                TempData["success"] = "Villa Number added successfully!";
+                RedirectToAction("Index");
+                break;
+            case (_,true):
+                TempData["warning"] = "Villa Number already taken!";
+                break;
+            case (false,_):
+                break;
         }
-        if (!ModelState.IsValid)
-        {
-            return View();
-        }
-        _context.Tbl_VillaNumber.Add(obj);
-        _context.SaveChanges();
-        TempData["success"] = "Villa Number added successfully!";
-        return RedirectToAction("Index");
+        return View(obj);
     }
     
-    public IActionResult EditVilla(int villaId)
+    public IActionResult EditVilla(int villaNumberId)
     {
-        var villa = _context.Tbl_Villa.FirstOrDefault(x => x.Id == villaId);
-        if (villa == null)
+        VillaNumberVM villaNumberVM = new()
+        {
+            VillaList = _context.Tbl_Villa.ToList()
+                .Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),
+                    Text = u.Name
+                }),
+            VillaNumber = _context.Tbl_VillaNumber.FirstOrDefault(u => u.Villa_Number == villaNumberId)
+        };
+        if (villaNumberVM.VillaNumber is null)
         {
             return RedirectToAction("Error", "Home");
         }
-        return View(villa);
+        return View(villaNumberVM);
     }
     [HttpPost]
     public IActionResult EditVilla(int villaId, Villa input)
