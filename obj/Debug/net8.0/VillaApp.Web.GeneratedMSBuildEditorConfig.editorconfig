@@ -42,8 +42,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcQWRkVmlsbGFOdW1iZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/VillaNumber/EditVilla.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcRWRpdFZpbGxhLmNzaHRtbA==
+[D:/DotNet_Projects/Villa-App/Views/VillaNumber/EditVillaNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcRWRpdFZpbGxhTnVtYmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DotNet_Projects/Villa-App/Views/VillaNumber/Index.cshtml]

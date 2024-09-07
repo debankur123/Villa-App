@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VillaApp.Domains.Entities;
 
@@ -22,7 +23,9 @@ public class Villa
     public int? Occupancy { get; set; }
     [Display(Name = "Image URL")]
     public string? ImageUrl { get; set; }
-    public DateTime? CreatedDate { get; set; }
+    [Column(TypeName = "datetime(6)")]
+    public DateTime? CreatedDate { get; set; } 
+    [Column(TypeName = "datetime(6)")]
     public DateTime? UpdatedDate { get; set; }
     public bool IsActive { get; set; } = true;
 }

@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DotNet_Projects\\Villa-App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|d:\\dotnet_projects\\villa-app\\controllers\\villanumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|solutionrelative:controllers\\villanumbercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|d:\\dotnet_projects\\villa-app\\views\\villanumber\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|solutionrelative:views\\villanumber\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|d:\\dotnet_projects\\villa-app\\views\\villanumber\\deletevillanumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|solutionrelative:views\\villanumber\\deletevillanumber.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|d:\\dotnet_projects\\villa-app\\views\\villa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5A367941-1BFD-4B6B-96A7-D8AE1211A599}|VillaApp.Web.csproj|solutionrelative:views\\villa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BCDDEB2-FFEF-4C49-90F6-03A6E40E0320}|VillaApp.Domains\\VillaApp.Domains.csproj|d:\\dotnet_projects\\villa-app\\villaapp.domains\\entities\\villanumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BCDDEB2-FFEF-4C49-90F6-03A6E40E0320}|VillaApp.Domains\\VillaApp.Domains.csproj|solutionrelative:villaapp.domains\\entities\\villanumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "D:\\DotNet_Projects\\Villa-App\\Views\\Villa\\index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Villa\\index.cshtml",
+              "ToolTip": "D:\\DotNet_Projects\\Villa-App\\Views\\Villa\\index.cshtml",
+              "RelativeToolTip": "Views\\Villa\\index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T12:53:16.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VillaNumber.cs",
+              "DocumentMoniker": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\Entities\\VillaNumber.cs",
+              "RelativeDocumentMoniker": "VillaApp.Domains\\Entities\\VillaNumber.cs",
+              "ToolTip": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\Entities\\VillaNumber.cs",
+              "RelativeToolTip": "VillaApp.Domains\\Entities\\VillaNumber.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAArwA0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T12:45:14.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteVillaNumber.cshtml",
+              "DocumentMoniker": "D:\\DotNet_Projects\\Villa-App\\Views\\VillaNumber\\DeleteVillaNumber.cshtml",
+              "RelativeDocumentMoniker": "Views\\VillaNumber\\DeleteVillaNumber.cshtml",
+              "ToolTip": "D:\\DotNet_Projects\\Villa-App\\Views\\VillaNumber\\DeleteVillaNumber.cshtml",
+              "RelativeToolTip": "Views\\VillaNumber\\DeleteVillaNumber.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T12:41:12.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DotNet_Projects\\Villa-App\\Views\\VillaNumber\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\VillaNumber\\Index.cshtml",
+              "ToolTip": "D:\\DotNet_Projects\\Villa-App\\Views\\VillaNumber\\Index.cshtml",
+              "RelativeToolTip": "Views\\VillaNumber\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T14:04:54.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VillaNumberController.cs",
+              "DocumentMoniker": "D:\\DotNet_Projects\\Villa-App\\Controllers\\VillaNumberController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VillaNumberController.cs",
+              "ToolTip": "D:\\DotNet_Projects\\Villa-App\\Controllers\\VillaNumberController.cs",
+              "RelativeToolTip": "Controllers\\VillaNumberController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwCQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T09:22:42.582Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 104,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

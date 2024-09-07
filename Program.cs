@@ -6,11 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // Add DbContext
+//MySql Connection 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
-        b => b.MigrationsAssembly("VillaApp.Infrastructure"));
-});
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DbConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DbConnection"))));
 
 
 var app = builder.Build();
@@ -34,19 +34,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-// Add a partial Program class to provide EF Core the needed configuration during design-time
-public partial class Program
-{
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.ConfigureServices((context, services) =>
-                {
-                    services.AddDbContext<ApplicationDbContext>(options =>
-                        options.UseNpgsql(
-                            context.Configuration.GetConnectionString("DefaultConnection")));
-                });
-            });
-}

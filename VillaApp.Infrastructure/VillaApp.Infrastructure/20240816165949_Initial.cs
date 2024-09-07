@@ -24,8 +24,8 @@ namespace VillaApp.Infrastructure.VillaApp.Infrastructure
                     Sqft = table.Column<int>(type: "integer", nullable: true),
                     Occupancy = table.Column<int>(type: "integer", nullable: true),
                     ImageUrl = table.Column<string>(type: "text", nullable: true),
-                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    UpdatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    CreatedDate = table.Column<DateTime>(type: "datetime(6)", nullable: true, defaultValueSql: "CURRENT_TIMESTAMP(6)"),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime(6)", nullable: true, defaultValueSql: "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)")
                 },
                 constraints: table =>
                 {

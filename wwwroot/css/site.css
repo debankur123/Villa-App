@@ -31,7 +31,7 @@ body {
   font-size: 21px;
 }
 .ionic-icons {
-  font-size: 20px;
+  font-size: 19.5px;
 }
 
 .align-middle {
@@ -70,3 +70,35 @@ body {
 .needs-validation .form-control:valid {
   border-color: #28a745;
 }
+
+.truncate {
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Hide text that overflows the container */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    max-width: 150px; /* Adjust the width as needed */
+    display: inline-block;
+}
+
+.tooltip-content {
+    display: none; /* Hide tooltip by default */
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1000;
+    max-width: 300px;
+    word-wrap: break-word;
+    font-size: 14px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.tooltip-wrapper {
+    position: relative; /* Container for the tooltip */
+    display: inline-block;
+}
+
+    .tooltip-wrapper:hover .tooltip-content {
+        display: block; /* Show tooltip on hover */
+    }
+

@@ -18,6 +18,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="MySql.Data" Version="9.0.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +57,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="Views\VillaNumber\DeleteVillaNumber.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\VillaNumber\DeleteVillaNumber.cshtml" />
     <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\bin\Debug\net8.0\VillaApp.Infrastructure.deps.json" />
     <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\bin\Debug\net8.0\VillaApp.Infrastructure.runtimeconfig.json" />
     <_ContentIncludedByDefault Remove="VillaApp.Infrastructure\obj\Debug\net8.0\VillaApp.Infrastructure.sourcelink.json" />
@@ -73,6 +81,14 @@
 
   <ItemGroup>
     <ProjectReference Include="VillaApp.Infrastructure\VillaApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\VillaNumber\DeleteVillaNumber.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\VillaNumber\DeleteVillaNumber.cshtml" />
   </ItemGroup>
 
 </Project>

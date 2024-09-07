@@ -1,8 +1,10 @@
 @model VillaNumberVM
 
-<div class="card border-0 shadow-lg p-4">
-    <div class="card-header bg-success bg-gradient text-center text-white py-3">
-        <h2>Create Villa Number</h2>
+<div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+    <div class="card-header bg-gradient text-center text-white py-4" style="background: linear-gradient(45deg, #004E64, #4fbfa8);">
+        <h2 style="font-size: 2rem; font-weight: bold; color: #ffffff; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);">
+            Create Villa Number
+        </h2>
     </div>
     <div class="card-body p-4">
         <form id="toastNotification" method="post" class="needs-validation">
@@ -25,15 +27,15 @@
                 <input asp-for="VillaNumber!.SpecialDetails" class="form-control shadow-sm" />
             </div>
 
-            <div class="row">
+            <div class="row justify-content-end">
                 <div class="col-6 col-md-3">
-                    <button type="submit" class="btn btn-colour-1 w-100">
+                    <button type="submit" class="btn btn-colour-1 btn-sm w-100">
                         <ion-icon name="checkmark-circle-outline" class="me-1 ionic-icons align-middle"></ion-icon>SAVE
                     </button>
                 </div>
                 <div class="col-6 col-md-3">
-                    <a asp-action="Index" asp-controller="VillaNumber" class="btn btn-outline w-100">
-                        <i class="material-icons align-middle">close</i> DISCARD
+                    <a asp-action="Index" asp-controller="VillaNumber" class="btn btn btn-outline btn-sm w-100">
+                        <ion-icon name="close-circle-sharp" class="me-1 ionic-icons align-middle"></ion-icon>DISCARD
                     </a>
                 </div>
             </div>
@@ -42,30 +44,37 @@
 </div>
 
 <style>
+    .btn-outline {
+        color: #4fbfa8;
+        background-color: #ffffff;
+        border-color: #4fbfa8;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+        .btn-outline:hover,
+        .btn-outline:active,
+        .btn-outline:focus,
+        .btn-outline.active {
+            background: #4fbfa8;
+            color: #ffffff;
+            border-color: #4fbfa8;
+        }
 
     .btn-colour-1 {
         color: #fff;
         background-color: #004E64;
-        border: none;
+        border-color: #004E64;
         font-weight: bold;
         letter-spacing: 0.05em;
-        border-radius: 0.25rem;
-        padding: 0.5rem 1rem;
     }
 
-    .btn-outline {
-        color: #4fbfa8;
-        background-color: #ffffff;
-        border: none;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-        border-radius: 0.25rem;
-        padding: 0.5rem 1rem;
-    }
+        .btn-colour-1:hover,
+        .btn-colour-1:active,
+        .btn-colour-1:focus,
+        .btn-colour-1.active {
+            background: #003D4F;
+            color: #ffffff;
+            border-color: #003D4F;
+        }
 </style>
-
-@section Scripts {
-    @{
-        <partial name="_ValidationScriptsPartial" />
-    }
-}

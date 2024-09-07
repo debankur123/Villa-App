@@ -51,8 +51,7 @@ public class VillaNumberController : Controller
                 _context.Tbl_VillaNumber.Add(obj.VillaNumber!);
                 _context.SaveChanges();
                 TempData["success"] = "Villa Number added successfully!";
-                RedirectToAction("Index");
-                break;
+                return RedirectToAction("Index");
             case (_,true):
                 TempData["warning"] = "Villa Number already taken!";
                 break;
@@ -62,7 +61,7 @@ public class VillaNumberController : Controller
         return View(obj);
     }
     
-    public IActionResult EditVilla(int villaNumberId)
+    public IActionResult EditVillaNumber(int villaNumberId)
     {
         VillaNumberVM villaNumberVM = new()
         {
@@ -81,12 +80,11 @@ public class VillaNumberController : Controller
         return View(villaNumberVM);
     }
     [HttpPost]
-    public IActionResult EditVilla(int villaId, Villa input)
+    public IActionResult EditVillaNumber(VillaNumberVM input)
     {
-        var model = _context.Tbl_Villa.FirstOrDefault(val => val.Id == villaId && val.IsActive == true);
-        if (model is null)
+        if (!ModelState.IsValid)
         {
-            ModelState.AddModelError("", "");
+            ModelState!.AddModelError("", "");
             TempData["error"] = "Something went wrong! Please try again";
             //return RedirectToAction("Error", "Home");
         }
@@ -94,33 +92,33 @@ public class VillaNumberController : Controller
         {
             if (ModelState.IsValid)
             {
-                model!.Name = input.Name;
-                model.Description = input.Description;
-                model.IsActive = true;
-                model.Price = input.Price;
-                model.Sqft = input.Sqft;
-                model.Occupancy = input.Occupancy;
-                model.ImageUrl = model.ImageUrl;
-                _context.Update(model);
+                _context.Tbl_VillaNumber.Update(input.VillaNumber!);
                 _context.SaveChanges();
+                TempData["success"] = "Request modified successfully";
+                return RedirectToAction("Index");
             }
-            TempData["success"] = "Villa edited successfully!";
-            return RedirectToAction("Index", "Villa");
+            input.VillaList = _context.Tbl_Villa.ToList()
+                .Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),
+                    Text = u.Name
+                });
+            return View(input);
         }
         catch (Exception)
         {
-            return View(model);
+            return View("Error","Home");
         }
     }
 
-    public IActionResult DeleteVilla(int villaId)
+    public IActionResult DeleteVillaNumber(int villaNumberId)
     {
-        var requestId = _context.Tbl_Villa.FirstOrDefault(u => u.Id == villaId);
-        if (requestId is null)
+        var objId = _context.Tbl_VillaNumber.FirstOrDefault(u => u.Villa_Number == villaNumberId);
+        if (objId is null)
         {
             return View("Error", "Home");
         }
-        return View(requestId);
+        return View(objId);
     }
     [HttpPost]
     public IActionResult DeleteVilla(int Id, Villa obj)

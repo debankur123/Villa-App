@@ -5,7 +5,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header text-center">
-                <h5 class="modal-title" style="text-align: center;" id="deleteProductLabel">Delete Villa</h5>
+                <h5 class="modal-title" id="deleteProductLabel">Delete Villa</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -19,7 +19,7 @@
                         </button>
                         <button type="submit" class="btn btn-danger" asp-area="" asp-controller="Villa"
                             asp-action="DeleteVilla">
-                            <span><i class="material-icons align-middle me-1">delete</i></span>DELETE
+                            <span><ion-icon name="trash-bin-sharp" class="me-1 align-middle ionic-icons"></ion-icon></span>DELETE
                         </button>
                     </div>
                 </form>
@@ -36,6 +36,10 @@
         crossorigin="anonymous"></script>
 }
 <style>
+    .modal-title {
+        justify-content : center;
+        align-items : center;
+    }
     .btn-outline {
         color: #4fbfa8;
         background-color: #ffffff;

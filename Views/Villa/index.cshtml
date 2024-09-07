@@ -1,7 +1,7 @@
 @model List<Villa>
 
 <div class="w-100 card border-0 p-4">
-    <div class="card-header bg-success bg-gradient ml-0 py-3">
+    <div class="card-header bg-dark bg-gradient ml-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="text-white py-2">Villa(s)</h2>
@@ -12,36 +12,41 @@
         <div class="row pb-3">
             <div class="col-6 offset-6 text-end">
                 <a asp-action="AddVilla" asp-controller="Villa" class="btn btn-colour-1 btn-sm">
-                    <span><i class="material-icons align-middle">add</i></span>
-                    ADD VILLA
+                    <span><ion-icon name="add-circle-sharp" class="me-1 align-middle ionic-icons"></ion-icon></span>
+                    CREATE VILLA
                 </a>
             </div>
         </div>
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>Sqft</th>
-                    <th>Occupancy</th>
-                    <th>Actions</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Sqft</th>
+                    <th class="text-center">Occupancy</th>
+                    <th class="text-center">Actions</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var obj in Model)
                 {
                     <tr>
-                        <td>@obj.Name</td>
-                        <td>@obj.Price</td>
-                        <td>@obj.Sqft</td>
-                        <td>@obj.Occupancy</td>
+                        <td class="text-center">
+                            <div class="tooltip-wrapper">
+                                <span class="truncate">@obj.Name</span>
+                                <div class="tooltip-content">@obj.Name</div>
+                            </div>
+                        </td>
+                        <td class="text-center">@obj.Price</td>
+                        <td class="text-center">@obj.Sqft</td>
+                        <td class="text-center">@obj.Occupancy</td>
                         <td class="text-center">
                             <a asp-action="EditVilla" asp-controller="Villa" asp-route-villaId="@obj.Id" class="btn btn-sm">
-                                <img src="~/Assets/edit-button.png" alt="Edit" class="img-icon-edit" />
+                                <ion-icon name="pencil-sharp" class="me-1 align-middle ionic-icons"></ion-icon>
                             </a>
                             <a href="#" data-bs-toggle="modal" data-bs-target="@("#DeleteProduct-" + obj.Id)"
                                 data-bs-url="@Url.Action($"DeleteTag/{obj.Id}")" class="btn btn-sm">
-                                <img src="~/Assets/trash.png" alt="Delete" class="img-icon-delete" />
+                                <ion-icon name="trash-bin-sharp" class="me-1 align-middle ionic-icons"></ion-icon>
                             </a>
                             @await Html.PartialAsync("DeleteVilla", obj)
                         </td>

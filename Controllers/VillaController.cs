@@ -29,7 +29,18 @@ public class VillaController : Controller
             TempData["warning"] = "Name and Description shouldn't be same!";
         }
         if (!ModelState.IsValid) return View();
-        _context.Tbl_Villa.Add(obj);
+        Villa objModel = new Villa()
+        {
+            Name = obj.Name,
+            Description = obj.Description,
+            IsActive = true,
+            Sqft = obj.Sqft,
+            Price = obj.Price,
+            Occupancy = obj.Occupancy,
+            ImageUrl = obj.ImageUrl,
+            CreatedDate = DateTime.Now,
+        };
+        _context.Tbl_Villa.Add(objModel);
         _context.SaveChanges();
         TempData["success"] = "Villa added successfully!";
         return RedirectToAction("Index", "Villa");
