@@ -1672,6 +1672,19 @@
           "lib/net8.0/ZstdSharp.dll": {}
         }
       },
+      "VillaApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "VillaApp.Domains": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VillaApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VillaApp.Application.dll": {}
+        }
+      },
       "VillaApp.Domains/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4536,6 +4549,11 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "VillaApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../VillaApp.Application/VillaApp.Application.csproj",
+      "msbuildProject": "../VillaApp.Application/VillaApp.Application.csproj"
+    },
     "VillaApp.Domains/1.0.0": {
       "type": "project",
       "path": "../VillaApp.Domains/VillaApp.Domains.csproj",
@@ -4552,43 +4570,36 @@
       "MySql.Data >= 9.0.0",
       "MySql.EntityFrameworkCore >= 8.0.5",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
-      "VillaApp.Domains >= 1.0.0"
+      "VillaApp.Application >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\012173\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/debankur/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\VillaApp.Infrastructure.csproj",
+      "projectUniqueName": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/VillaApp.Infrastructure.csproj",
       "projectName": "VillaApp.Infrastructure",
-      "projectPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\VillaApp.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\012173\\.nuget\\packages\\",
-      "outputPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Infrastructure\\obj\\",
+      "projectPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/VillaApp.Infrastructure.csproj",
+      "packagesPath": "/home/debankur/.nuget/packages/",
+      "outputPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Infrastructure/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\012173\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/debankur/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\VillaApp.Domains.csproj": {
-              "projectPath": "D:\\DotNet_Projects\\Villa-App\\VillaApp.Domains\\VillaApp.Domains.csproj"
+            "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/VillaApp.Application.csproj": {
+              "projectPath": "/home/debankur/MyWorkSpace/VillaApp/VillaApp.Application/VillaApp.Application.csproj"
             }
           }
         }
@@ -4597,11 +4608,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4661,7 +4667,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300-preview.24203.14/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

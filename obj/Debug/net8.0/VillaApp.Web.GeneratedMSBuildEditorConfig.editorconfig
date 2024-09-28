@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VillaApp.Web
 build_property.RootNamespace = VillaApp.Web
-build_property.ProjectDir = D:\DotNet_Projects\Villa-App\
+build_property.ProjectDir = /home/debankur/MyWorkSpace/VillaApp/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DotNet_Projects\Villa-App
+build_property.MSBuildProjectDirectory = /home/debankur/MyWorkSpace/VillaApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DotNet_Projects/Villa-App/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/debankur/MyWorkSpace/VillaApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Shared/_Notifications.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb25zLmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/Shared/_Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Ob3RpZmljYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/VillaNumber/AddVillaNumber.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcQWRkVmlsbGFOdW1iZXIuY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/AddVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvQWRkVmlsbGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/VillaNumber/EditVillaNumber.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcRWRpdFZpbGxhTnVtYmVyLmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/DeleteVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvRGVsZXRlVmlsbGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/VillaNumber/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFOdW1iZXJcSW5kZXguY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/EditVilla.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvRWRpdFZpbGxhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Villa/AddVilla.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFcQWRkVmlsbGEuY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/Villa/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGEvaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Villa/DeleteVilla.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFcRGVsZXRlVmlsbGEuY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/VillaNumber/AddVillaNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGFOdW1iZXIvQWRkVmlsbGFOdW1iZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Villa/EditVilla.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFcRWRpdFZpbGxhLmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/VillaNumber/EditVillaNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGFOdW1iZXIvRWRpdFZpbGxhTnVtYmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Villa/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlsbGFcaW5kZXguY3NodG1s
+[/home/debankur/MyWorkSpace/VillaApp/Views/VillaNumber/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmlsbGFOdW1iZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/debankur/MyWorkSpace/VillaApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/debankur/MyWorkSpace/VillaApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotNet_Projects/Villa-App/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-cwpqcx5zma
+[/home/debankur/MyWorkSpace/VillaApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-h2tyku9q6j

@@ -613,27 +613,27 @@
           "runtimes/win-x64/native/comerr64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/gssapi64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/k5sprt64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/krb5_64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x64/native/krbcc64.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "4.1.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -856,14 +856,7 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.424.16909"
-          }
-        }
-      },
+      "System.Diagnostics.DiagnosticSource/8.0.1": {},
       "System.Diagnostics.EventLog/8.0.0": {},
       "System.IO/4.3.0": {
         "dependencies": {
@@ -941,12 +934,6 @@
       "System.Text.Json/8.0.4": {
         "dependencies": {
           "System.Text.Encodings.Web": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/System.Text.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.724.31311"
-          }
         }
       },
       "System.Threading.Channels/6.0.0": {},
@@ -982,6 +969,14 @@
           }
         }
       },
+      "VillaApp.Application/1.0.0": {
+        "dependencies": {
+          "VillaApp.Domains": "1.0.0"
+        },
+        "runtime": {
+          "VillaApp.Application.dll": {}
+        }
+      },
       "VillaApp.Domains/1.0.0": {
         "runtime": {
           "VillaApp.Domains.dll": {}
@@ -995,7 +990,7 @@
           "MySql.Data": "9.0.0",
           "MySql.EntityFrameworkCore": "8.0.5",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
-          "VillaApp.Domains": "1.0.0"
+          "VillaApp.Application": "1.0.0"
         },
         "runtime": {
           "VillaApp.Infrastructure.dll": {}
@@ -1617,6 +1612,11 @@
       "sha512": "sha512-Z62eNBIu8E8YtbqlMy57tK3dV1+m2b9NhPeaYovB5exmLKvrGCqOhJTzrEUH5VyUWU6vwX3c1XHJGhW5HVs8dA==",
       "path": "zstdsharp.port/0.8.0",
       "hashPath": "zstdsharp.port.0.8.0.nupkg.sha512"
+    },
+    "VillaApp.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "VillaApp.Domains/1.0.0": {
       "type": "project",
