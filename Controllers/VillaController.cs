@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using VillaApp.Application.Common.Interfaces;
 using VillaApp.Domains.Entities;
 using VillaApp.Infrastructure.Data;
 
@@ -6,13 +7,15 @@ namespace VillaApp.Controllers;
 public class VillaController : Controller
 {
     private readonly ApplicationDbContext _context;
-    public VillaController(ApplicationDbContext context)
+    private readonly IVillaRepository _repo;
+    public VillaController(ApplicationDbContext context, IVillaRepository repo)
     {
         _context = context;
+        _repo = repo;
     }
     public IActionResult Index()
     {
-        var villas = _context.Tbl_Villa.Where(x => x.IsActive == true).ToList();
+        var villas = _repo.GetVillas();
         return View(villas);
     }
 
@@ -28,27 +31,30 @@ public class VillaController : Controller
             ModelState.AddModelError("", "");
             TempData["warning"] = "Name and Description shouldn't be same!";
         }
-        if (!ModelState.IsValid) return View();
-        Villa objModel = new Villa()
+        // if (ModelState.IsValid)
+        // {
+        //     _repo.Add(obj);
+        //     _repo.SaveToDB();
+        //     TempData["success"] = "Villa added successfully!";
+        //     return RedirectToAction("Index", "Villa");
+        // }
+        try
         {
-            Name = obj.Name,
-            Description = obj.Description,
-            IsActive = true,
-            Sqft = obj.Sqft,
-            Price = obj.Price,
-            Occupancy = obj.Occupancy,
-            ImageUrl = obj.ImageUrl,
-            CreatedDate = DateTime.Now,
-        };
-        _context.Tbl_Villa.Add(objModel);
-        _context.SaveChanges();
-        TempData["success"] = "Villa added successfully!";
-        return RedirectToAction("Index", "Villa");
+            _repo.Add(obj);
+            _repo.SaveToDB();
+            TempData["success"] = "Villa added!";
+            return RedirectToAction("Index","Villa");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            return View();
+        }
     }
 
     public IActionResult EditVilla(int villaId)
     {
-        var villa = _context.Tbl_Villa.FirstOrDefault(x => x.Id == villaId);
+        var villa = _repo.GetVilla(x => x.Id == villaId);
         if (villa == null)
         {
             return RedirectToAction("Error", "Home");
@@ -76,8 +82,8 @@ public class VillaController : Controller
                 model.Sqft = input.Sqft;
                 model.Occupancy = input.Occupancy;
                 model.ImageUrl = model.ImageUrl;
-                _context.Update(model);
-                _context.SaveChanges();
+               _context.Tbl_Villa.Update(model);
+               _context.SaveChanges();
             }
             TempData["success"] = "Villa edited successfully!";
             return RedirectToAction("Index", "Villa");
@@ -90,7 +96,7 @@ public class VillaController : Controller
 
     public IActionResult DeleteVilla(int villaId)
     {
-        var requestId = _context.Tbl_Villa.FirstOrDefault(u => u.Id == villaId);
+        var requestId = _repo.GetVilla(u => u.Id == villaId);
         if (requestId is null)
         {
             return View("Error", "Home");
