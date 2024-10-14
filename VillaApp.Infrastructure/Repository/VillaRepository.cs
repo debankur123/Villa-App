@@ -1,60 +1,22 @@
-using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
 using VillaApp.Application.Common.Interfaces;
 using VillaApp.Domains.Entities;
 using VillaApp.Infrastructure.Data;
 namespace VillaApp.Infrastructure.Repository;
 
-public class VillaRepository(ApplicationDbContext context) : IVillaRepository
+public class VillaRepository : GenericRepository<Villa>,IVillaRepository
 {
-    private static readonly char[] separator = [','];
-
-    public void Add(Villa entity)
+    private readonly ApplicationDbContext? _context; 
+    public VillaRepository(ApplicationDbContext context) : base(context)
     {
-        context.Tbl_Villa.Add(entity);
-    }
-
-    public Villa GetVilla(Expression<Func<Villa, bool>> filter, string? includeProperties = null)
-    {
-        IQueryable<Villa> query = context.Set<Villa>();
-        if (filter is not null)
-        {
-            query = query.Where(filter);
-        }
-        if (!string.IsNullOrEmpty(includeProperties))
-        {
-            foreach (var item in includeProperties.Split(separator, StringSplitOptions.RemoveEmptyEntries))
-            {
-                query = query.Include(item);
-            }
-        }
-        return query.FirstOrDefault()!;
-    }
-
-    public IEnumerable<Villa> GetVillas(Expression<Func<Villa, bool>>? filter = null, string? includeProperties = null)
-    {
-        IQueryable<Villa> query = context.Set<Villa>();
-        if (filter is not null)
-        {
-            query = query.Where(filter);
-        }
-        if (!string.IsNullOrEmpty(includeProperties))
-        {
-            foreach (var item in includeProperties.Split(separator, StringSplitOptions.RemoveEmptyEntries))
-            {
-                query = query.Include(item);
-            }
-        }
-        return [.. query];
-    }
-
-    public void SaveToDB()
-    {
-        context.SaveChanges();
+        _context = context;
     }
 
     public void Update(Villa entity)
     {
-        context.Tbl_Villa.Update(entity);
+        _context!.Tbl_Villa.Update(entity);
+    }
+    public void SaveToDb()
+    {
+        _context!.SaveChanges();
     }
 }

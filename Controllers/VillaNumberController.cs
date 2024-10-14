@@ -116,7 +116,7 @@ public class VillaNumberController : Controller
         if (villaNumberToDelete == null)
         {
             TempData["error"] = "Something went wrong!";
-            return RedirectToAction("Index");
+            return View();
         }
         try
         {
@@ -128,8 +128,8 @@ public class VillaNumberController : Controller
         {
             TempData["error"] = "Something went wrong!";
         }
-        return RedirectToAction("Index");
+        TempData["error"] = "Something went wrong while processing!";
+        return View();
     }
-
 
 }
