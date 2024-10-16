@@ -13,7 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DbConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DbConnection"))));
-builder.Services.AddScoped<IVillaRepository, VillaRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
 var app = builder.Build();
 

@@ -123,13 +123,13 @@ public class VillaNumberController : Controller
             _context.Tbl_VillaNumber.Remove(villaNumberToDelete);
             _context.SaveChanges();
             TempData["success"] = "Villa removed successfully!";
+            return RedirectToAction("Index", "VillaNumber");
         }
         catch (Exception)
         {
             TempData["error"] = "Something went wrong!";
+            return RedirectToAction("Index");
         }
-        return RedirectToAction("Index");
     }
-
 
 }

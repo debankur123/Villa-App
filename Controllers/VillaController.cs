@@ -7,54 +7,55 @@ namespace VillaApp.Controllers;
 public class VillaController : Controller
 {
     private readonly ApplicationDbContext _context;
-    private readonly IVillaRepository _repo;
-    public VillaController(ApplicationDbContext context, IVillaRepository repo)
+    private readonly IUnitOfWork _unitOfWork;
+    public VillaController(ApplicationDbContext context, IUnitOfWork unitOfWork)
     {
         _context = context;
-        _repo = repo;
+        _unitOfWork = unitOfWork;
     }
     public IActionResult Index()
     {
-        var villas = _repo.GetVillas();
-        return View(villas);
+        var villas = _unitOfWork.villaRepo.GetVillas(x => x.IsActive == true);
+        return View(villas.OrderBy(x => x.Name).ToList());
     }
 
     public IActionResult AddVilla()
     {
         return View();
     }
+
     [HttpPost]
     public IActionResult AddVilla(Villa obj)
     {
         if (obj.Name == obj.Description)
         {
-            ModelState.AddModelError("", "");
-            TempData["warning"] = "Name and Description shouldn't be same!";
+            ModelState.AddModelError("", "Name and Description shouldn't be the same!");
+            TempData["warning"] = "Name and Description shouldn't be the same!";
         }
-        // if (ModelState.IsValid)
-        // {
-        //     _repo.Add(obj);
-        //     _repo.SaveToDB();
-        //     TempData["success"] = "Villa added successfully!";
-        //     return RedirectToAction("Index", "Villa");
-        // }
-        try
+        if (ModelState.IsValid)
         {
-            _repo.Add(obj);
-            _repo.SaveToDB();
-            TempData["success"] = "Villa added!";
-            return RedirectToAction("Index","Villa");
+            try
+            {
+                _unitOfWork.villaRepo.Add(obj!);
+                _unitOfWork.CommitToDb();
+                TempData["success"] = "Villa added successfully!";
+                return RedirectToAction("Index", "Villa");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                TempData["error"] = "An error occurred while saving the villa.";
+            }
         }
-        catch (Exception e)
-        {
-            Console.WriteLine(e.Message);
-            return View();
-        }
+        // If we reach here, ModelState is not valid, or something else went wrong
+        TempData["error"] = "There was an issue with your submission!";
+        return View(obj); 
     }
+
 
     public IActionResult EditVilla(int villaId)
     {
-        var villa = _repo.GetVilla(x => x.Id == villaId);
+        var villa = _unitOfWork.villaRepo.GetVilla(x => x.Id == villaId);
         if (villa == null)
         {
             return RedirectToAction("Error", "Home");
@@ -82,49 +83,38 @@ public class VillaController : Controller
                 model.Sqft = input.Sqft;
                 model.Occupancy = input.Occupancy;
                 model.ImageUrl = model.ImageUrl;
-               _context.Tbl_Villa.Update(model);
-               _context.SaveChanges();
+                _context.Tbl_Villa.Update(model);
+                _unitOfWork.CommitToDb();
+                TempData["success"] = "Villa edited successfully!";
+                return RedirectToAction("Index", "Villa");
             }
-            TempData["success"] = "Villa edited successfully!";
-            return RedirectToAction("Index", "Villa");
         }
         catch (Exception)
         {
             return View(model);
         }
+        TempData["error"] = "Something went wrong! Please try again";
+        return View(model);
     }
-
-    public IActionResult DeleteVilla(int villaId)
-    {
-        var requestId = _repo.GetVilla(u => u.Id == villaId);
-        if (requestId is null)
-        {
-            return View("Error", "Home");
-        }
-        return View(requestId);
-    }
-    [HttpPost]
     public IActionResult DeleteVilla(int Id, Villa obj)
     {
         var villaToDelete = _context.Tbl_Villa.FirstOrDefault(u => u.Id == Id && u.IsActive == true);
         if (villaToDelete is null)
         {
             TempData["error"] = "Something went wrong!";
+            return View();
         }
         try
         {
-            if (villaToDelete is not null)
-            {
-                villaToDelete.IsActive = false;
-            }
-            _context.SaveChanges();
+            villaToDelete.IsActive = false;
+            _unitOfWork.CommitToDb();
             TempData["success"] = "Villa removed successfully!";
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Villa");
         }
         catch (Exception)
         {
             TempData["error"] = "Something went wrong!";
         }
-        return View("Index");
+        return View(obj);
     }
 }
