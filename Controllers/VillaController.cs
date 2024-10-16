@@ -7,16 +7,16 @@ namespace VillaApp.Controllers;
 public class VillaController : Controller
 {
     private readonly ApplicationDbContext _context;
-    private readonly IVillaRepository _repo;
-    public VillaController(ApplicationDbContext context, IVillaRepository repo)
+    private readonly IUnitOfWork _unitOfWork;
+    public VillaController(ApplicationDbContext context, IUnitOfWork unitOfWork)
     {
         _context = context;
-        _repo = repo;
+        _unitOfWork = unitOfWork;
     }
     public IActionResult Index()
     {
-        var villas = _repo.GetVillas(x => x.IsActive == true);
-        return View(villas.ToList());
+        var villas = _unitOfWork.villaRepo.GetVillas(x => x.IsActive == true);
+        return View(villas.OrderBy(x => x.Name).ToList());
     }
 
     public IActionResult AddVilla()
@@ -36,8 +36,8 @@ public class VillaController : Controller
         {
             try
             {
-                _repo.Add(obj!);
-                _repo.SaveToDb();
+                _unitOfWork.villaRepo.Add(obj!);
+                _unitOfWork.CommitToDb();
                 TempData["success"] = "Villa added successfully!";
                 return RedirectToAction("Index", "Villa");
             }
@@ -55,7 +55,7 @@ public class VillaController : Controller
 
     public IActionResult EditVilla(int villaId)
     {
-        var villa = _repo.GetVilla(x => x.Id == villaId);
+        var villa = _unitOfWork.villaRepo.GetVilla(x => x.Id == villaId);
         if (villa == null)
         {
             return RedirectToAction("Error", "Home");
@@ -84,7 +84,7 @@ public class VillaController : Controller
                 model.Occupancy = input.Occupancy;
                 model.ImageUrl = model.ImageUrl;
                 _context.Tbl_Villa.Update(model);
-                _context.SaveChanges();
+                _unitOfWork.CommitToDb();
                 TempData["success"] = "Villa edited successfully!";
                 return RedirectToAction("Index", "Villa");
             }
@@ -107,7 +107,7 @@ public class VillaController : Controller
         try
         {
             villaToDelete.IsActive = false;
-            _context.SaveChanges();
+            _unitOfWork.CommitToDb();
             TempData["success"] = "Villa removed successfully!";
             return RedirectToAction("Index", "Villa");
         }

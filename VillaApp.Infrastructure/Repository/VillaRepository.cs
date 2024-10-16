@@ -15,8 +15,8 @@ public class VillaRepository : GenericRepository<Villa>,IVillaRepository
     {
         _context!.Tbl_Villa.Update(entity);
     }
-    public void SaveToDb()
-    {
-        _context!.SaveChanges();
-    }
+    // public void SaveToDb()
+    // {
+    //     _context!.SaveChanges();
+    // }
 }
