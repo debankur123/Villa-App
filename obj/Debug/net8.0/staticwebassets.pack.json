@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets/Assets/trash.png"
     },
     {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Images/VillaImages/485d1e4a-0fc4-4d64-8cc9-762b22a1e559.jpg",
+      "PackagePath": "staticwebassets/Images/VillaImages/485d1e4a-0fc4-4d64-8cc9-762b22a1e559.jpg"
+    },
+    {
       "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

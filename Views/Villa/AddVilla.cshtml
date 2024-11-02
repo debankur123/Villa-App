@@ -2,13 +2,13 @@
 
 <body class="container bg-light">
     <div class="text-center pt-5">
-        <h2>Create Villa</h2>
-        <p>Enter the details of the new villa below.</p>
+        <h2>Edit Villa</h2>
+        <p>Please modify the details of villa below.</p>
     </div>
 
     <div class="card">
         <div class="card-body">
-            <form id="toastNotification" method="post" class="needs-validation">
+            <form id="toastNotification" method="post" class="needs-validation" enctype="multipart/form-data">
 
                 <div class="form-group">
                     <label asp-for="Name">Villa Name</label>
@@ -38,11 +38,14 @@
                 <div class="form-group">
                     <label asp-for="Occupancy">Occupancy</label>
                     <input asp-for="Occupancy" class="form-control shadow-sm" placeholder="Enter occupancy" />
+                    <span asp-validation-for="Occupancy" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
-                    <label asp-for="ImageUrl">Image URL</label>
-                    <input asp-for="ImageUrl" class="form-control shadow-sm" placeholder="Enter image URL" />
+                    <label asp-for="ImageUrl">Image</label>
+                    <input asp-for="ImageUrl" hidden class="form-control shadow-sm" placeholder="Enter image URL" />
+                    <input asp-for="Image" class="form-control shadow-sm" placeholder="Select Image" />
+                    
                 </div>
 
                 <div class="row justify-content-end">

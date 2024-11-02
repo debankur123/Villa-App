@@ -1,0 +1,53 @@
+@model AmenityVM
+
+<body class="container bg-light">
+    <div class="text-center pt-5">
+        <h2>Create Villa Number</h2>
+        <p>Enter the details of the new villa number below.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <form id="toastNotification" method="post" class="needs-validation">
+
+                <div class="form-group">
+                    <label asp-for="Amenity!.VillaId">Select Villa</label>
+                    <select asp-for="@Model.Amenity!.VillaId" asp-items="@Model.VillaList" class="form-control shadow-sm" required>
+                        <option disabled selected>--Select Villa--</option>
+                    </select>
+                    <span asp-validation-for="Amenity!.VillaId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Amenity!.Name">Villa Number</label>
+                    <input asp-for="Amenity!.Name" class="form-control shadow-sm" placeholder="Enter amenity name" />
+                    <span asp-validation-for="Amenity!.Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Amenity!.Description">Special Details</label>
+                    <input asp-for="Amenity!.Description" class="form-control shadow-sm" placeholder="Enter description" />
+                </div>
+
+                <div class="row justify-content-end">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-danger btn-sm shadow-sm w-100 pt-1 mt-3">
+                            <ion-icon name="checkmark-circle-outline" class="me-1 ionic-icons align-middle"></ion-icon>SUBMIT
+                        </button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-action="Index" asp-controller="Amenity" class="btn btn-outline-dark btn-sm shadow-sm w-100 pt-1 mt-3">
+                            <ion-icon name="close-circle-sharp" class="me-1 ionic-icons align-middle"></ion-icon>DISCARD
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
