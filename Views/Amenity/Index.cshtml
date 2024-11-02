@@ -1,0 +1,296 @@
+﻿@model IEnumerable<Amenity>
+@{
+    int lineNo = 1;
+}
+
+<div class="w-100 card border-0 p-4 shadow-lg rounded">
+    <div class="card-header bg-dark bg-gradient ml-0 py-3 rounded-top">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Amenity List</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body border p-4 bg-light rounded-bottom">
+        <div class="row pb-3">
+            <div class="col-6 offset-6 text-end">
+                <a asp-action="AddAmenity" asp-controller="Amenity"
+                    class="btn btn-outline-primary btn-sm shadow-sm">
+                    <span><ion-icon name="add-circle-sharp" class="me-1 align-middle ionic-icons"></ion-icon></span>
+                    ASSIGN AMENITY
+                </a>
+            </div>
+        </div>
+        <!-- Add table responsive for better mobile view -->
+        <div class="table-responsive">
+            <table id="datatable" class="table table-hover table-bordered table-striped align-middle shadow-sm ">
+                <thead class="bg-gradient bg-primary text-white">
+                    <tr>
+                        <th class="text-center">SL No.</th>
+                        <th class="text-center">Name</th>
+                        <th class="text-center">Description</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td class="text-center">@lineNo</td>
+                            <td class="text-center">
+                                <div class="tooltip-wrapper">
+                                    <span class="truncate">@obj.Name</span>
+                                    <div class="tooltip-content">@obj.Name</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="tooltip-wrapper">
+                                    <span class="truncate">@obj.Description</span>
+                                    <div class="tooltip-content">@obj.Description</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="EditAmenity" asp-controller="Amenity"
+                                    asp-route-AmenityId="@obj.Id"
+                                    class="btn btn-outline-dark btn-sm shadow-sm">
+                                    <ion-icon name="pencil-sharp" class="me-1 align-middle ionic-icons"></ion-icon> EDIT
+                                </a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="@("#DeleteModal-" + obj.Id)"
+                                    class="btn btn-outline-danger btn-sm shadow-sm">
+                                    <ion-icon name="trash-outline" class="me-1 align-middle ionic-icons"></ion-icon>
+                                    DELETE
+                                </a>
+                            </td>
+                        </tr>
+                        lineNo++;
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Markup -->
+@foreach (var obj in Model)
+{
+    <div class="modal fade" id="DeleteModal-@obj.Id" tabindex="-1" aria-labelledby="DeleteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DeleteModalLabel">Delete Amenity</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ion-icon name="warning-sharp"></ion-icon>
+                <p>Are you sure you want to delete Amenity?<strong>@obj.Id</strong> of
+                    <strong>@obj.Name</strong></p>
+                <p class="text-muted">This action cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark btn-icon" data-bs-dismiss="modal">
+                    <ion-icon name="close-circle-outline"></ion-icon> CANCEL
+                </button>
+                <a asp-action="DeleteAmenity" asp-route-AmenityId="@obj.Id"
+                    class="btn btn-outline-danger btn-icon">
+                    <ion-icon name="trash-outline"></ion-icon> DELETE
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+}
+@* Styling components *@
+<style>
+    .table-hover tbody tr:hover {
+        background-color: rgba(0, 123, 255, 0.15);
+        transition: background-color 0.2s;
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+
+    /* Tooltip styling */
+    .tooltip-wrapper {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .tooltip-wrapper .tooltip-content {
+        visibility: hidden;
+        width: 150px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip-wrapper:hover .tooltip-content {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border: none;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    /* Modal Header */
+    .modal-header {
+        background-color: #ff6b6b;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        color: white;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .btn-close-white {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+    }
+
+    /* Modal Body */
+    .modal-body {
+        padding: 1.5rem;
+        color: #333;
+        text-align: center;
+    }
+
+    .modal-body p {
+        font-size: 1rem;
+        margin: 0.75rem 0;
+    }
+
+    .modal-body ion-icon {
+        font-size: 3.5rem;
+        color: #ff6b6b;
+        margin-bottom: 15px;
+    }
+
+    /* Modal Footer */
+    .modal-footer {
+        border-top: none;
+        padding: 1.5rem;
+        justify-content: center;
+    }
+
+    .modal-footer .btn {
+        width: 120px;
+        padding: 0.6rem;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .modal-footer .btn-outline-dark {
+        border-color: #6c757d;
+        color: #6c757d;
+        background-color: transparent;
+    }
+
+    .modal-footer .btn-outline-dark:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+    .modal-footer .btn-outline-danger {
+        border-color: #ff6b6b;
+        color: #ff6b6b;
+        background-color: transparent;
+    }
+
+    .modal-footer .btn-outline-danger:hover {
+        background-color: #ff6b6b;
+        color: #fff;
+    }
+
+    /* General Enhancements */
+    .btn-icon {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .btn-icon ion-icon {
+        margin-right: 5px;
+        font-size: 1.2rem;
+    }
+
+    .btn-custom-excel {
+        background-color: #28a745;
+        border-color: #28a745;
+        color: white;
+    }
+
+    .btn-custom-print {
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+        color: white;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('#datatable').DataTable({
+            scrollCollapse: true,
+            scrollY: '50vh',
+            dom: '<"row"<"col-md-6"l><"col-md-6"Bf>>tip',
+            buttons: [
+                {
+                    extend: 'excelHtml5',
+                    text: '<ion-icon name="download-outline" class="me-1"></ion-icon> IMPORT TO EXCEL',
+                    className: 'btn btn-custom-excel btn-sm shadow-sm',
+                    exportOptions: {
+                        columns: ':not(:last-child)',
+                        format: {
+                            body: function (data, row, column, node) {
+                                if ($(node).is("td, th")) {
+                                    return $(node).find('.truncate').text().trim() || $(node).text().trim();
+                                }
+                                return data;
+                            }
+                        }
+                    }
+                },
+                {
+                    extend: 'print',
+                    text: '<ion-icon name="print-outline" class="me-1"></ion-icon> PRINT',
+                    className: 'btn-custom-print btn-sm shadow-sm',
+                    exportOptions: {
+                        columns: ':not(:last-child)',
+                        format: {
+                            body: function (data, row, column, node) {
+                                let cellData = $(data).is("td, th") ? $(data).text().trim() : data;
+                                return cellData;
+                            }
+                        }
+                    }
+                }
+            ],
+            lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+            pageLength: 10,
+        });
+    });
+</script>

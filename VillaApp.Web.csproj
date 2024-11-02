@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Aspire.Npgsql" Version="8.1.0" />
     <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.1.0" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -88,7 +89,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\VillaNumber\DeleteVillaNumber.cshtml" />
+    <Folder Include="wwwroot/Assets/Villa/" />
+    <Folder Include="wwwroot/VillaImages/" />
+    <Folder Include="wwwroot\Villa\" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace VillaApp.Domains.Entities;
 
@@ -28,4 +30,8 @@ public class Villa
     [Column(TypeName = "datetime(6)")]
     public DateTime? UpdatedDate { get; set; }
     public bool IsActive { get; set; } = true;
+    [NotMapped]
+    public IFormFile? Image { get; set; }
+    [ValidateNever]
+    public IEnumerable<Amenity>? AmenityList { get; set; }
 }

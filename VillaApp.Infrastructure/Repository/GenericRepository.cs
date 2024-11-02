@@ -20,6 +20,12 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         entitySet.Add(entity);
     }
+
+    public Boolean Any(Expression<Func<T, bool>> filter)
+    {
+        return entitySet.Any(filter);
+    }
+
     public T GetVilla(Expression<Func<T, bool>> filter, string? includeProperties = null)
     {
         IQueryable<T> query = entitySet;

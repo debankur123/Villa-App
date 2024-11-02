@@ -1,22 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using VillaApp.Application.Common.Interfaces;
 using VillaApp.Infrastructure.Data;
 using VillaApp.Web.ViewModels;
 
 namespace VillaApp.Controllers;
-public class VillaNumberController : Controller
+public class VillaNumberController(ApplicationDbContext context, IUnitOfWork unitOfWork) : Controller
 {
-    private readonly ApplicationDbContext _context;
-    public VillaNumberController(ApplicationDbContext context)
-    {
-        _context = context;
-    }
+    private readonly ApplicationDbContext _context = context;
+    private readonly IUnitOfWork _unitOfWork = unitOfWork;
+
     public IActionResult Index()
     {
-        var villaNumber = _context.Tbl_VillaNumber
-            .Include(u => u.Villa)
-            .ToList();
+        var villaNumber = _unitOfWork.villaNumberRepo.GetVillas(includeProperties: "Villa");
         return View(villaNumber);
     }
     [HttpGet]
@@ -24,7 +20,7 @@ public class VillaNumberController : Controller
     {
         VillaNumberVM villaNumberVM = new()
         {
-            VillaList = _context.Tbl_Villa.ToList()
+            VillaList = _unitOfWork.villaRepo.GetVillas(x => x.IsActive == true)
                 .Select(u => new SelectListItem
                 {
                     Value = u.Id.ToString(),
@@ -38,8 +34,8 @@ public class VillaNumberController : Controller
     [HttpPost]
     public IActionResult AddVillaNumber(VillaNumberVM obj)
     {
-        var roomExists = _context.Tbl_VillaNumber.Any(u => u.Villa_Number == obj.VillaNumber!.Villa_Number);
-        obj.VillaList = _context.Tbl_Villa.ToList().Select(u => new SelectListItem
+        var roomExists = _unitOfWork.villaNumberRepo.Any(u => u.Villa_Number == obj.VillaNumber!.Villa_Number);
+        obj.VillaList = _unitOfWork.villaRepo.GetVillas().Select(u => new SelectListItem
         {
             Text = u.Name.ToString(),
             Value = u.Id.ToString()
@@ -47,8 +43,8 @@ public class VillaNumberController : Controller
         switch (ModelState.IsValid, roomExists)
         {
             case (true, false):
-                _context.Tbl_VillaNumber.Add(obj.VillaNumber!);
-                _context.SaveChanges();
+                _unitOfWork.villaNumberRepo.Add(obj.VillaNumber!);
+                _unitOfWork.CommitToDb();
                 TempData["success"] = "Villa Number added successfully!";
                 return RedirectToAction("Index");
             case (_, true):
@@ -64,13 +60,13 @@ public class VillaNumberController : Controller
     {
         VillaNumberVM villaNumberVM = new()
         {
-            VillaList = _context.Tbl_Villa.ToList()
+            VillaList = _unitOfWork.villaRepo.GetVillas()
                 .Select(u => new SelectListItem
                 {
                     Value = u.Id.ToString(),
                     Text = u.Name
                 }),
-            VillaNumber = _context.Tbl_VillaNumber.FirstOrDefault(u => u.Villa_Number == villaNumberId)
+            VillaNumber = _unitOfWork.villaNumberRepo.GetVilla(u => u.Villa_Number == villaNumberId)
         };
         if (villaNumberVM.VillaNumber is null)
         {
@@ -83,7 +79,7 @@ public class VillaNumberController : Controller
     {
         if (!ModelState.IsValid)
         {
-            ModelState!.AddModelError("", "");
+            ModelState.AddModelError("", "");
             TempData["error"] = "Something went wrong! Please try again";
             //return RedirectToAction("Error", "Home");
         }
@@ -91,12 +87,12 @@ public class VillaNumberController : Controller
         {
             if (ModelState.IsValid)
             {
-                _context.Tbl_VillaNumber.Update(input.VillaNumber!);
-                _context.SaveChanges();
+                _unitOfWork.villaNumberRepo.Update(input.VillaNumber!);
+                _unitOfWork.CommitToDb();
                 TempData["success"] = "Request modified successfully";
                 return RedirectToAction("Index");
             }
-            input.VillaList = _context.Tbl_Villa.ToList()
+            input.VillaList = _unitOfWork.villaRepo.GetVillas()
                 .Select(u => new SelectListItem
                 {
                     Value = u.Id.ToString(),
@@ -112,7 +108,7 @@ public class VillaNumberController : Controller
     //[HttpPost]
     public IActionResult DeleteVillaNumber(int villaNumberId)
     {
-        var villaNumberToDelete = _context.Tbl_VillaNumber.FirstOrDefault(u => u.Villa_Number == villaNumberId);
+        var villaNumberToDelete = _unitOfWork.villaNumberRepo.GetVilla(u => u.Villa_Number == villaNumberId);
         if (villaNumberToDelete == null)
         {
             TempData["error"] = "Something went wrong!";
@@ -121,7 +117,7 @@ public class VillaNumberController : Controller
         try
         {
             _context.Tbl_VillaNumber.Remove(villaNumberToDelete);
-            _context.SaveChanges();
+            _unitOfWork.CommitToDb();
             TempData["success"] = "Villa removed successfully!";
             return RedirectToAction("Index", "VillaNumber");
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t1WJM71tBaT7yU+FBOY/JzzYxwzzS4ZPJjyMkjaOC/Q=",
+  "Hash": "b1TaCuy9zvXXTQyqyGM/6ZT8J8TPt1CHaU/WsnhtZrU=",
   "Source": "VillaApp.Web",
   "BasePath": "_content/VillaApp.Web",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/Images/VillaImages/485d1e4a-0fc4-4d64-8cc9-762b22a1e559.jpg",
+      "SourceId": "VillaApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "BasePath": "_content/VillaApp.Web",
+      "RelativePath": "Images/VillaImages/485d1e4a-0fc4-4d64-8cc9-762b22a1e559.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/VillaImages/485d1e4a-0fc4-4d64-8cc9-762b22a1e559.jpg"
     },
     {
       "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/js/site.js",

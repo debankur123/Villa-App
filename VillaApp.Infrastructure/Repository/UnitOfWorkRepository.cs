@@ -6,7 +6,12 @@ namespace VillaApp.Infrastructure.Repository;
 public class UnitOfWorkRepository : IUnitOfWork
 {
     private readonly ApplicationDbContext _context;
-    public IVillaRepository villaRepo { get; private set; }
+    public IVillaRepository villaRepo { get; }
+    public IVillaNumberRepository villaNumberRepo { get; }
+
+    public IAmenity amenityRepo { get; }
+
+    //public IVillaNumberRepository numberRepo { get; private set; }
     public void CommitToDb()
     {
         _context.SaveChanges();
@@ -14,7 +19,9 @@ public class UnitOfWorkRepository : IUnitOfWork
 
     public UnitOfWorkRepository(ApplicationDbContext context)
     {
-        _context = context;
-        villaRepo = new VillaRepository(_context);
+        _context        = context;
+        villaRepo       = new VillaRepository(_context);
+        villaNumberRepo = new VillaNumberRepository(_context);
+        amenityRepo     = new AmenityRepository(_context);
     }
 }

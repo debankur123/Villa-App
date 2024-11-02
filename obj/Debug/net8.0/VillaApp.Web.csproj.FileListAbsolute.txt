@@ -294,3 +294,5 @@ D:/DotNet_Projects/Villa-App/obj/Debug/net8.0/ref/VillaApp.Web.dll
 /home/debankur/MyWorkSpace/VillaApp/obj/Debug/net8.0/VillaApp.Web.MvcApplicationPartsAssemblyInfo.cs
 /home/debankur/MyWorkSpace/VillaApp/bin/Debug/net8.0/VillaApp.Application.dll
 /home/debankur/MyWorkSpace/VillaApp/bin/Debug/net8.0/VillaApp.Application.pdb
+/home/debankur/MyWorkSpace/VillaApp/bin/Debug/net8.0/Dapper.dll
+/home/debankur/MyWorkSpace/VillaApp/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

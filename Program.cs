@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using VillaApp.Application.Common.Interfaces;
+using VillaApp.Domains.Entities;
 using VillaApp.Infrastructure.Data;
 using VillaApp.Infrastructure.Repository;
 
@@ -14,6 +16,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         builder.Configuration.GetConnectionString("DbConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DbConnection"))));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
+
+//Add Identity Configs
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 
