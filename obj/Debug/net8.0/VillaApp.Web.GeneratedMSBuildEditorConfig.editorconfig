@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQW1lbml0eS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/debankur/MyWorkSpace/VillaApp/Views/Authentication/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Authentication/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/debankur/MyWorkSpace/VillaApp/Views/Authentication/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRpb24vU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/debankur/MyWorkSpace/VillaApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

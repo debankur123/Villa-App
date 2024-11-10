@@ -17,9 +17,9 @@ public class HomeController : Controller
     {
         var obj = new HomeVM
         {
-            VillaList = _unitOfWork.villaRepo.GetVillas(includeProperties:"AmenityList").ToArray(),
+            VillaList = [.. _unitOfWork.villaRepo.GetVillas(includeProperties:"AmenityList")],
             NoOfNights = 1,
-            CheckInDate = DateOnly.FromDateTime(DateTime.Now),
+            CheckInDate = DateOnly.FromDateTime(DateTime.Now)
         };
         return View(obj);
     }

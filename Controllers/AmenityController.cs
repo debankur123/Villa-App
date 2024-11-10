@@ -1,11 +1,14 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using VillaApp.Application.Common.Interfaces;
+using VillaApp.Application.Common.Utilities;
 using VillaApp.Infrastructure.Data;
 using VillaApp.Web.ViewModels;
 
 namespace VillaApp.Controllers
 {
+    [Authorize(Roles = StaticDetails.Role_Admin)]
     public class AmenityController(ApplicationDbContext context, IUnitOfWork unitOfWork) : Controller
     {
         internal IUnitOfWork UnitOfWork => unitOfWork;
@@ -102,7 +105,7 @@ namespace VillaApp.Controllers
         public IActionResult DeleteAmenity(int AmenityId)
         {
             var AmenityToDelete = UnitOfWork.amenityRepo.GetVilla(u => u.Id== AmenityId);
-            if (AmenityToDelete == null)
+            if (AmenityToDelete is  null)
             {
                 TempData["error"] = "Something went wrong!";
                 return RedirectToAction("Index");

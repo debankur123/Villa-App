@@ -1,0 +1,97 @@
+@model LoginVM
+
+<div class="login-container">
+    <div class="login-form">
+        <img src="~/Assets/LoginIcon.svg" alt="Logo" class="logo">
+
+        <h3 class="text-center mb-4 font-weight-bold">Welcome Back</h3>
+
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Email"></label>
+                <input type="email" asp-for="Email" id="inputEmail" class="form-control shadow-sm" placeholder="Enter your email" required>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Password">Password</label>
+                <input type="password" id="inputPassword" asp-for="Password" class="form-control shadow-sm" placeholder="Enter your password" required>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+            </div>
+
+            <div class="text-center d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-dark btn-lg btn-block shadow-sm">
+                    <ion-icon name="log-in-outline" class="me-1 align-middle ionic-icons"></ion-icon>Login
+                </button>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="#" class="text-muted">Forgot Password?</a>
+            </div>
+
+            <div class="text-center mt-3">
+                <small>Don’t have an account? <a href="#" class="text-primary">Sign up</a></small>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+        /* Centering container */
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        /* Form styling */
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            padding: 2rem;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo styling */
+        .login-form .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 70px;
+            height: 70px;
+        }
+
+        /* Form fields */
+        .form-group label {
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-radius: 30px;
+            padding: 12px 20px;
+        }
+        
+        /* Link styling */
+        .text-muted {
+            font-size: 0.9rem;
+        }
+        
+        /* Bottom text links spacing */
+        .text-center.mt-3 {
+            margin-top: 1.5rem !important;
+        }
+</style>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
