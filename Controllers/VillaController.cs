@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VillaApp.Application.Common.Interfaces;
 using VillaApp.Domains.Entities;
@@ -5,6 +6,7 @@ using VillaApp.Infrastructure.Data;
 
 namespace VillaApp.Controllers
 {
+    [Authorize]
     public class VillaController(ApplicationDbContext context, IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment) : Controller
     {
         private readonly ApplicationDbContext _context = context;
@@ -36,7 +38,7 @@ namespace VillaApp.Controllers
                 {
                     if (obj.Image is not null)
                     {
-                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(obj.Image.FileName);
+                        string fileName = Guid.NewGuid() + Path.GetExtension(obj.Image.FileName);
                         String imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"Images/VillaImages");
                         Console.WriteLine("Image path: " + imagePath);
                         //If directory is not being created.
@@ -96,7 +98,7 @@ namespace VillaApp.Controllers
                 {
                     if (input.Image is not null)
                     {
-                        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(input.Image.FileName);
+                        string fileName = Guid.NewGuid() + Path.GetExtension(input.Image.FileName);
                         string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"Images/VillaImages");
                         Console.WriteLine("Image path: " + imagePath);
                         //If directory is not being created.
