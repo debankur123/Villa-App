@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/css/spinner.css",
+      "PackagePath": "staticwebassets/css/spinner.css"
+    },
+    {
       "Id": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VillaApp.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a724d80bab8b553d3e1be8ba4c32015ff614db8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54415053a079e4c91e82bd179a52aed7cd939a5f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VillaApp.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VillaApp.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

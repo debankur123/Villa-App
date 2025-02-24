@@ -34,4 +34,6 @@ public class Villa
     public IFormFile? Image { get; set; }
     [ValidateNever]
     public IEnumerable<Amenity>? AmenityList { get; set; }
+    [NotMapped]
+    public bool IsAvailable { get; set; } = true;
 }

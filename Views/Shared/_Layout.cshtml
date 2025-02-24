@@ -44,7 +44,8 @@
 
     <!-- Buttons Print (for Print option) -->
     <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
-
+    @* Spinner stylesheet *@
+    <link rel="stylesheet" href="~/css/spinner.css">
 
 </head>
 
@@ -95,6 +96,7 @@
     </header>
     <div>
         <main role="main">
+            <div class="loading spinner" style="display: none;"></div>
             <partial name="_Notifications" />
             @RenderBody()
         </main>
