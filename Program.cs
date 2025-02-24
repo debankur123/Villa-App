@@ -17,6 +17,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DbConnection"))));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWorkRepository>();
 
+// SQL Server Connection
+/*builder.Services.AddDbContext<ApplicationDbContext>(
+    options =>
+    {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
+    }
+    );*/
+
 //Add Identity Configs
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     {
@@ -27,6 +35,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
+    options.LoginPath = "/Authentication/Login";
     options.AccessDeniedPath = "/Authentication/AccessDenied";
 });
 

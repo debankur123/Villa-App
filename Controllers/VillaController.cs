@@ -39,7 +39,7 @@ namespace VillaApp.Controllers
                     if (obj.Image is not null)
                     {
                         string fileName = Guid.NewGuid() + Path.GetExtension(obj.Image.FileName);
-                        String imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"Images/VillaImages");
+                        string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, @"Images/VillaImages");
                         Console.WriteLine("Image path: " + imagePath);
                         //If directory is not being created.
                         if (!Directory.Exists(imagePath))
@@ -71,7 +71,6 @@ namespace VillaApp.Controllers
             TempData["error"] = "There was an issue with your submission!";
             return View(obj);
         }
-
 
         public IActionResult EditVilla(int villaId)
         {

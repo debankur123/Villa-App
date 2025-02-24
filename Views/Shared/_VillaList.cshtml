@@ -1,0 +1,91 @@
+@model HomeVM
+<div id="VillasList">
+    <div class="row px-lg-5 m-lg-4 m-sm-0 px-sm-0" style="--bs-gutter-x:0">
+        @foreach (var items in Model.VillaList!)
+        {
+            <div class="p-4 col-md-12 col-lg-6">
+                <div class="row" style="border-radius:5px; border: 1px solid #aaa">
+                    <div class="col-4 p-2">
+                        <img class="d-block w-100" style="border-radius:5px;" src="@items.ImageUrl" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="d-flex justify-content-between">
+                            <p class="card-title text-warning" style="font-size:xx-large">@items.Name</p>
+                            <div class="pt-2">
+                                <button type="button" class="btn btn-sm btn-outline-info" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal-@(items.Id)">
+                                    <ion-icon name="list-outline" class="me-1 align-middle ionic-icons"></ion-icon>
+                                    DETAILS
+                                </button>
+                            </div>
+                        </div>
+                        <p class="card-text text-white">
+                            @Html.Raw(items.Description)
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row pb-3 pt-2">
+                            <div class="col-4">
+                                @if (Model.CheckInDate != null && Model.CheckInDate > DateOnly.FromDateTime(DateTime.Now))
+                                {
+                                    @if (items.IsAvailable)
+                                    {
+                                        <button class="btn btn-outline-success form-control btn-block">
+                                            <ion-icon name="bookmark-outline"
+                                                      class="me-1 align-middle ionic-icons"></ion-icon>
+                                            BOOK
+                                        </button>
+                                    }
+                                    else
+                                    {
+                                        <button class="btn btn-outline-danger disabled form-control btn-block">
+                                            <ion-icon name="bookmark-outline"
+                                                      class="me-1 align-middle ionic-icons"></ion-icon>
+                                            SOLD OUT
+                                        </button>
+                                    }
+                                }
+
+                            </div>
+                            <div class="col-4">
+                                <span class="text-white">Max Occupancy : @items.Occupancy adults </span><br/>
+                                <span class="pt-1 text-white">Villa Size : @items.Sqft sqft</span><br/>
+                            </div>
+                            <div class="col-4">
+                                        <span class="text-warning float-end font-weight-bold pt-1"
+                                              style="font-size:25px;">
+                                            USD
+                                            <span style="border-bottom:1px solid #ff6a00">
+                                                @($"{@items.Price:0,0.00}")
+                                            </span>
+                                        </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            /*Modal Popup*/
+            <div class="modal fade" id="exampleModal-@(items.Id)" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-xl" style="border: 1px solid #aaa; border-radius:7px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-3 text-success" id="exampleModalLabel">Villa Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body m-0">
+                            <partial name="_VillaDetails" model="@items"/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                                <ion-icon name="close-circle-sharp" class="me-1 ionic-icons align-middle"></ion-icon>
+                                DISCARD
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

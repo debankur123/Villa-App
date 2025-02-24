@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w4/oJkfu3E9L/ucUTJ3G3LIR/bb+WXca7Z2OUZ71Ua0=",
+  "Hash": "401OWXUUIaVE1s/m1nStPjAYufA6eXfym2d5slJZVXc=",
   "Source": "VillaApp.Web",
   "BasePath": "_content/VillaApp.Web",
   "Mode": "Default",
@@ -281,6 +281,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/css/spinner.css",
+      "SourceId": "VillaApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/",
+      "BasePath": "_content/VillaApp.Web",
+      "RelativePath": "css/spinner.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/spinner.css"
     },
     {
       "Identity": "/home/debankur/MyWorkSpace/VillaApp/wwwroot/favicon.ico",
